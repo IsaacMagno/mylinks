@@ -5,17 +5,19 @@ export default function Home() {
   return (
     <div className="flex min-h-screen justify-center items-center z-0">
       <video
-        src="particles.mp4"
-        autoPlay
-        loop
-        muted
+        loop={true}
+        muted={true}
+        autoPlay={true}
+        playsinline={true}
         className="absolute top-0 left-0 min-w-full min-h-full object-cover"
-      />
-      <div className="min-h-screen min-w-full text-center z-10 bg-gray-700 bg-opacity-30">
+      >
+        <source src="particles.webm" />
+      </video>
+      <div className="min-h-screen min-w-full text-center z-10 bg-gray-800 bg-opacity-30">
         <header>
           <div className="px-20 pt-40">
             <Image
-              src="/images/joy.jpeg"
+              src="/images/joy_anime.jpeg"
               width={150}
               height={150}
               quality={100}
